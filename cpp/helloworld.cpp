@@ -3,6 +3,6 @@
 int main()
 {
 	using namespace std;
-	cout << "Hello world!"; // Print "Hello world!" to stdout
+	cout << "Hello world!" << endl; // Print "Hello world!" to stdout
 	return 0;
 }
