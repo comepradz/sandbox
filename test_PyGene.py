@@ -14,7 +14,7 @@ from pygene.population import Population
 # this is the string that our organisms
 # are trying to evolve into
 '''teststr = "Hidup Itu Perjuangan. JANGAN PERNAH MENYERAH!"'''
-teststr = "You would still have my heart. Until the end of time."
+teststr = "CHASING US ALL UNDERGROUND"
 
 # convert the string into a list of floats, where
 # each float is the ascii value of the corresponding
