@@ -11,10 +11,12 @@ from pygene.gamete import Gamete
 from pygene.organism import Organism, MendelOrganism
 from pygene.population import Population
 
+import time as t
+
 # this is the string that our organisms
 # are trying to evolve into
 '''teststr = "Hidup Itu Perjuangan. JANGAN PERNAH MENYERAH!"'''
-teststr = "CHASING US ALL UNDERGROUND"
+teststr = "VENCEREMOS!"
 
 # convert the string into a list of floats, where
 # each float is the ascii value of the corresponding
@@ -95,15 +97,17 @@ ph = StringHackerPopulation()
 
 def main(nfittest=10, nkids=100):
     i = 0
+    tstart = t.time()
     while True:
         b = ph.best()
         print "generation %s: %s best=%s average=%s)" % (
             i, repr(b), b.get_fitness(), ph.fitness())
         if b.get_fitness() <= 0:
-            print "cracked!"
             break
         i += 1
         ph.gen()
+    tstop = t.time()
+    print "cracked in", str(tstop-tstart), "seconds"
 
 
 if __name__ == '__main__':
