@@ -1,6 +1,4 @@
-a.out
 *.pyc
-*.so
-*.o
 *.swp
-*.tmp
+*.o
+a.out
