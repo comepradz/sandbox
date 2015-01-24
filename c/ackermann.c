@@ -1,3 +1,6 @@
+/*
+   Plain and stupidly naive written code of ackermann function.
+*/
 #include <stdio.h>
 
 int ack(m,n)
