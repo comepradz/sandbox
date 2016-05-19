@@ -1,6 +1,7 @@
 *.pyc
 *.csv
 *.swp
+*.tmp
 *.o
 *.pdf
 a.out
